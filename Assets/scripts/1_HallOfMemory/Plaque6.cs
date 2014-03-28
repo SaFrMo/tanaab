@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Plaque2 : Conversation {
+public class Plaque6 : Conversation {
 
 	// IMPLEMENTATION:
 	/* GetContent is the main function here. First, it resets the following values:
@@ -52,21 +52,21 @@ public class Plaque2 : Conversation {
 		whereTo = -1;
 
 		switch (key) {
-
+			//
 
 		case 0:
-			toContent = "2. HISTORY, CONTINUED.";
+			toContent = "6. A FACE IN THE CROWD.";
 			AllowPlayerLines();
 			playerLines = new Dictionary<string, int>() {
 				{ "[Continue]", 1 }
 			};
 			break;
 
-			//PLAQUE 2: 
+			// 
 
 		case 1:
 			GAME_MANAGER.PLAYER.GetComponent<WASDMovement>().Freeze (true);
-			toContent = "The Battle of Tanaab grew in both physical size and cultural presence - the number of ships at any given time never ceased increasing, and the battle's place as a metaphor entered the collective consciousness of mass media.";
+			toContent = "You have lived your life as a missing persons detective - you scour both the clerical records and the dead shipwrecks of the battle itself to deliver news about the final fates of persons of interest to your clients. ";
 			AllowPlayerLines();
 			playerLines = new Dictionary<string, int>() {
 				{ "[Continue]", 2 }
@@ -74,7 +74,7 @@ public class Plaque2 : Conversation {
 			break;
 
 		case 2:
-			toContent = "Articles, speeches, and news cycles began using the Battle of Tanaab as a shorthand for levels of interspatial conflict from the local to the galactic.";
+			toContent = "You are officially a Neutral Party, or NP, in the battle, and thus your ship is a bright red. This guarantees safety in some factions, raises the Leave-Alone (tm) bribe rates in others, and makes absolutely no difference whatsoever in others.";
 			AllowPlayerLines();
 			playerLines = new Dictionary<string, int>() {
 				{ "[Close]", 3 }

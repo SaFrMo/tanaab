@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 7ae79ad06c5f5234b831d0093cb7d7f9
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - conversationIcon: {fileID: 2800000, guid: 8dd400fa88f390b45a93d673e1e4e4b9, type: 3}
+  - skin: {instanceID: 0}
+  - continueIcon: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

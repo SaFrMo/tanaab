@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Plaque2 : Conversation {
+public class Plaque3 : Conversation {
 
 	// IMPLEMENTATION:
 	/* GetContent is the main function here. First, it resets the following values:
@@ -55,18 +55,18 @@ public class Plaque2 : Conversation {
 
 
 		case 0:
-			toContent = "2. HISTORY, CONTINUED.";
+			toContent = "3. THE PUBLIC'S INTEREST.";
 			AllowPlayerLines();
 			playerLines = new Dictionary<string, int>() {
 				{ "[Continue]", 1 }
 			};
 			break;
 
-			//PLAQUE 2: 
+			// .
 
 		case 1:
 			GAME_MANAGER.PLAYER.GetComponent<WASDMovement>().Freeze (true);
-			toContent = "The Battle of Tanaab grew in both physical size and cultural presence - the number of ships at any given time never ceased increasing, and the battle's place as a metaphor entered the collective consciousness of mass media.";
+			toContent = "In a fate unusual but not unheard of in history, spectators from nearby worlds began appearing to view the battle almost as soon as it began.";
 			AllowPlayerLines();
 			playerLines = new Dictionary<string, int>() {
 				{ "[Continue]", 2 }
@@ -74,7 +74,7 @@ public class Plaque2 : Conversation {
 			break;
 
 		case 2:
-			toContent = "Articles, speeches, and news cycles began using the Battle of Tanaab as a shorthand for levels of interspatial conflict from the local to the galactic.";
+			toContent = "As it dragged on into weeks and months, more and more came to see the curiosity of the long-lived fight to which so many public figures were alluding.";
 			AllowPlayerLines();
 			playerLines = new Dictionary<string, int>() {
 				{ "[Close]", 3 }
